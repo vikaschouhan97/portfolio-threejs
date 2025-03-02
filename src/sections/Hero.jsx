@@ -60,11 +60,11 @@ const Hero = () => {
 
   const sizes = calculateSizes(isSmall, isMobile, isTablet);
   return (
-    <section className="min-h-screen w-full flex flex-col relative">
+    <section className="min-h-screen w-full flex flex-col relative" id="home">
       <div className="w-full mx-auto flex flex-col sm:mt-24 mt-20 c-space gap-3">
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans mb-4">
           Hey, my name is{" "}
-          <span className="px-2 sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#872341] text-[#FBF5E5] rounded-lg">
+          <span className="px-2 sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
             Vikas
           </span>{" "}
           <span className="waving-hand">👋</span>
@@ -73,7 +73,7 @@ const Hero = () => {
           Turning Ideas into{" "}
           <RotatingText
             texts={["Software", "Products", "Services", "Brands"]}
-            mainClassName="px-2 sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#872341] text-[#FBF5E5] overflow-hidden mx-4 justify-center align-center rounded-lg"
+            mainClassName="px-2 sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] overflow-hidden mx-4 justify-center align-center rounded-lg"
             staggerFrom={"last"}
             initial={{ y: "100%" }}
             animate={{ y: 0 }}

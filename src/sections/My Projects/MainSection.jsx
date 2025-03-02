@@ -91,7 +91,7 @@ const MainSection = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <p>Check Live Site</p>
+            <p className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">Check Live Site</p>
             <img src="/assets/arrow-up.png" className="w-3 h-3" alt="arrow" />
           </a>
         </div>

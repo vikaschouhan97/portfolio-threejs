@@ -23,7 +23,12 @@ const About = () => {
               className="w-full sm:h-[276px] h-fit object-contain"
             ></img>
             <div>
-              <p className="grid-headtext">Hi, I&lsquo;m Vikas Chouhan</p>
+              <p className="grid-headtext">
+                Hi, I&lsquo;m{" "}
+                <span className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                  Vikas Chouhan
+                </span>
+              </p>
               <p className="grid-subtext">
                 With 2.5 years of experience, I have honed my skills in frontend
                 and backend development, with a focus on React and Node.js.
@@ -39,7 +44,11 @@ const About = () => {
               className="w-full sm:h-[276px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">Tech Stack</p>
+              <p className="grid-headtext">
+                <span className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                  Tech Stack
+                </span>
+              </p>
               <p className="grid-subtext">
                 I specialize in Javascript/Typescript with a focus on React and
                 Next.js ecosystems.
@@ -72,12 +81,22 @@ const About = () => {
             </div>
             <div>
               <p className="grid-headtext">
-                I work remotely across most timezones.
+                <span className="sm:px-1 sm:mt-0 mt-4 md:px-1 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                  {" "}
+                  I work remotely
+                </span>{" "}
+                across most timezones.
               </p>
               <p className="grid-subtext">
                 I&lsquo;m based in India, with remote work available.
               </p>
-              <Button name="Contact Me" isBeam containerClass="w-full mt-10" />
+              <a href="#contact">
+                <Button
+                  name="Contact Me"
+                  isBeam
+                  containerClass="w-full mt-10"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -89,10 +108,17 @@ const About = () => {
               className="w-full sm:h-[268px] h-fit object-contain"
             />
             <div>
-              <p className="grid-headtext">My Passion for Coding</p>
+              <p className="grid-headtext">
+                My Passion for{" "}
+                <span className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                  Coding
+                </span>
+              </p>
               <p className="grid-subtext">
                 I love solving problems and building things through code. Coding
-                isn&apos;t just my profession - it is my passion.  I enjoy exploring new technologies, and enhancing my skills. Always open for new challenges.
+                isn&apos;t just my profession - it is my passion. I enjoy
+                exploring new technologies, and enhancing my skills. Always open
+                for new challenges.
               </p>
             </div>
           </div>
@@ -106,10 +132,19 @@ const About = () => {
             />
 
             <div className="space-y-2">
-              <p className="grid-subtext text-center">Contact me</p>
+              <p className="grid-subtext text-center">
+                <span className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                  Contact me
+                </span>
+              </p>
               <div className="copy-container" onClick={handleCopy}>
-                <img src={hasCopied ? 'assets/tick.svg' : 'assets/copy.svg'} alt="copy" />
-                <p className="lg:text-lg md:text-xl font-medium text-gray_gradient text-white">vikaschouhan360@gmail.com</p>
+                <img
+                  src={hasCopied ? "assets/tick.svg" : "assets/copy.svg"}
+                  alt="copy"
+                />
+                <p className="lg:text-lg md:text-xl font-medium text-gray_gradient text-white">
+                  vikaschouhan360@gmail.com
+                </p>
               </div>
             </div>
           </div>
