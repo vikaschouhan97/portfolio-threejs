@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import BlurText from "../components/blurText";
 
 const Contact = () => {
   const formRef = useRef();
@@ -51,10 +52,18 @@ const Contact = () => {
           className="absolute inset-0 min-h-screen"
         />
         <div className="contact-container">
-          <h3 className="head-text">Contact Me</h3>
+          {/* <h3 className="head-text">Contact Me</h3> */}
+          <BlurText
+            text="Contact Me"
+            delay={150}
+            animateBy="words"
+            direction="top"
+            className="head-text text-white-800"
+          />
           <p className="text-lg text-white-600 mt-3">
-            Whether you're looking to build a new website, improve your existing
-            platform, or bring a unique project to life, I'm here to help.
+            Whether you&apos;re looking to build a new website, improve your
+            existing platform, or bring a unique project to life, I&apos;m here
+            to help.
           </p>
           <form
             ref={formRef}
@@ -63,7 +72,7 @@ const Contact = () => {
           >
             {/* <span className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg"></span> */}
             <label className="space-y-3">
-              <span className="field-label sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] rounded-lg">
+              <span className="field-label px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] rounded-lg">
                 Full Name
               </span>
               <input
@@ -77,7 +86,7 @@ const Contact = () => {
               />
             </label>
             <label className="space-y-3">
-              <span className="field-label sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+              <span className="field-label px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
                 Email
               </span>
               <input
@@ -91,7 +100,7 @@ const Contact = () => {
               />
             </label>
             <label className="space-y-3">
-              <span className="field-label sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+              <span className="field-label px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
                 Your Message
               </span>
               <textarea

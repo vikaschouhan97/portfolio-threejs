@@ -25,7 +25,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">
                 Hi, I&lsquo;m{" "}
-                <span className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                <span className="px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
                   Vikas Chouhan
                 </span>
               </p>
@@ -45,7 +45,7 @@ const About = () => {
             />
             <div>
               <p className="grid-headtext">
-                <span className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                <span className="px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
                   Tech Stack
                 </span>
               </p>
@@ -81,7 +81,7 @@ const About = () => {
             </div>
             <div>
               <p className="grid-headtext">
-                <span className="sm:px-1 sm:mt-0 mt-4 md:px-1 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                <span className="px-2 sm:mt-0 mt-4 md:px-1 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
                   {" "}
                   I work remotely
                 </span>{" "}
@@ -110,7 +110,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">
                 My Passion for{" "}
-                <span className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                <span className="px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
                   Coding
                 </span>
               </p>
@@ -133,7 +133,7 @@ const About = () => {
 
             <div className="space-y-2">
               <p className="grid-subtext text-center">
-                <span className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                <span className="px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
                   Contact me
                 </span>
               </p>

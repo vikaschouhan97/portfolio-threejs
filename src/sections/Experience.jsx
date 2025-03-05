@@ -4,13 +4,21 @@ import { OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../components/CanvasLoader";
 import { Suspense, useState } from "react";
 import Developer from "../components/Developer";
+import BlurText from "../components/blurText";
 
 const Experience = () => {
   const [animationName, setAnimationName] = useState("idle");
   return (
     <section className="c-space my-20">
       <div className="w-full text-white-600">
-        <h3 className="head-text">My Experience</h3>
+        {/* <h3 className="head-text">My Experience</h3> */}
+        <BlurText
+          text="My Experience"
+          delay={150}
+          animateBy="words"
+          direction="top"
+          className="head-text text-white-800"
+        />
         <div className="work-container">
           <div className="work-canvas">
             <Canvas>
@@ -48,7 +56,7 @@ const Experience = () => {
                     </div>
                     <div className="sm:p-5 px-2.5 py-5">
                       <p className="font-bold text-white-800">
-                        <span className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
+                        <span className="px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">
                           {name}
                         </span>
                       </p>

@@ -4,7 +4,7 @@ import { Center, OrbitControls } from "@react-three/drei";
 import CanvasLoader from "../../components/CanvasLoader";
 import DemoComputer from "../../components/DemoComputer";
 import { myProjects } from "../../constants";
-import DecryptedText from "../../components/DecryptedText";
+// import DecryptedText from "../../components/DecryptedText";
 
 const projectLength = myProjects.length;
 
@@ -41,7 +41,7 @@ const MainSection = () => {
           />
         </div>
         <div className="flex flex-col gap-5 text-white-600 my-5">
-        <DecryptedText
+        {/* <DecryptedText
             text={currentProject.title}
             speed={100}
             maxIterations={10}
@@ -50,11 +50,11 @@ const MainSection = () => {
             parentClassName="all-letters"
             encryptedClassName="encrypted"
             revealDirection="end"
-          />
-          {/* <p className="text-white text-2xl font-semibold animatedText">
+          /> */}
+          <p className="text-white text-2xl font-semibold animatedText">
             {currentProject.title}
-          </p> */}
-          <DecryptedText
+          </p>
+          {/* <DecryptedText
             text={currentProject.desc}
             speed={100}
             maxIterations={10}
@@ -73,9 +73,9 @@ const MainSection = () => {
             parentClassName="all-letters"
             encryptedClassName="encrypted"
             revealDirection="end"
-          />
-          {/* <p className="animatedText">{currentProject.desc}</p> */}
-          {/* <p className="animatedText">{currentProject.subdesc}</p> */}
+          /> */}
+          <p className="animatedText">{currentProject.desc}</p>
+          <p className="animatedText">{currentProject.subdesc}</p>
         </div>
         <div className="flex items-center justify-between flex-wrap gap-5">
           <div className="flex items-center gap-3">
@@ -91,7 +91,7 @@ const MainSection = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <p className="sm:px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">Check Live Site</p>
+            <p className="px-2 sm:mt-0 mt-4 md:px-3 bg-[#0a66c2] text-[#FBF5E5] rounded-lg">Check Live Site</p>
             <img src="/assets/arrow-up.png" className="w-3 h-3" alt="arrow" />
           </a>
         </div>
